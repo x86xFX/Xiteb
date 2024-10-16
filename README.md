@@ -40,3 +40,6 @@ This project leverages `StateFlow`, `suspend functions`, and `Lifecycle events` 
 
 ## Optional Features
 Optional feature is to implement random icons for the planet cards, Before implementing another network service, I used `Coil` for image loading. Leveraging Coil's built-in network image fetching capabilities with OkHttp, a visually appealing solution was implemented within the project's time constraints.
+
+## Releasing Project
+The released APK, optimized by R8 and with shrunken resources to minimize its size, can be downloaded from the project's [releases section](https://github.com/x86xFX/Xiteb/releases/tag/Latest) without cloning the project.
