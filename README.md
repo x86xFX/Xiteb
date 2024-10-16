@@ -1,6 +1,6 @@
 ## All Planets
 <p align="center">
-<img src="https://github.com/user-attachments/assets/d7ab433b-f00a-433a-aa31-aa3481460d2b" alt="preview"/>
+<img src="https://github.com/user-attachments/assets/58c2af1b-8ef7-4b07-af2c-fe83f097ba44" alt="preview"/>
 </p>
 
 ## Project Setup Instructions
