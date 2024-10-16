@@ -30,4 +30,13 @@ Cloning the Project
 - [Material 3](https://m3.material.io/): Latest version of Google’s open-source design system.
 
 ## Architecture Overview
-This project employs a clean architecture approach using MVVM, which is recommended by Google. The architecture is divided into distinct layers: the presentation layer, the domain layer, and the data layer. The presentation layer interacts with the domain layer, which in turn accesses the data layer, including the SWAPI API and its associated DTOs. Domain models are mapped from DTOs using a mapper package. The use of wrapper classes like UiState and Response enhances code clarity and maintainability.
+This project employs a `clean architecture` approach using `MVVM`, which is recommended by Google. The architecture is divided into distinct layers: the presentation layer, the domain layer, and the data layer. The presentation layer interacts with the domain layer, which in turn accesses the data layer, including the `SWAPI API` and its associated `DTOs`. Domain models are mapped from DTOs using a `mapper package`. The use of wrapper classes like `UiState` and `Response` enhances code clarity and maintainability.
+
+## Key Design Decisions
+This project leverages `StateFlow`, `suspend functions`, and `Lifecycle events` to efficiently manage data flow. `Kotlin Flow` is used to `fetch planet details`, but `suspend functions` could also be employed. For simplicity, `StateFlow` is used to collect planet data, which is then accessed by composables using `collectAsStateWithLifecycle`. The use of `extension functions` contributes to cleaner and more maintainable code. Ui is written in Jetpack Compose because Jetpack Compose is a modern UI toolkit for Android that simplifies UI development using a declarative syntax. It offers features like composable functions, state management, and theming, making it easier to create beautiful and performant user interfaces.
+
+## Testing
+`Dagger Hilt` was employed for dependency injection, enabling flexible implementation selection for use cases. For instance, the `AllPlanetsRepository` could use `fake or mock implementations`, facilitating testing in various scenarios. The `AllPlanetsRepositoryImpl` is injected into view models, streamlining unit testing.
+
+## Optional Features
+Optional feature is to implement random icons for the planet cards, Before implementing another network service, I used `Coil` for image loading. Leveraging Coil's built-in network image fetching capabilities with OkHttp, a visually appealing solution was implemented within the project's time constraints.
