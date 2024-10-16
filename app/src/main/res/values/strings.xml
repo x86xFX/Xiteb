@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">Xiteb</string>
+    <string name="please_wait">Please wait...</string>
+    <string name="oops_something_wrong">Oops, Something wrong</string>
+    <string name="navigate_back">Navigate back</string>
+    <string name="random_image">Random image</string>
+    <string name="all_planets">All Planets</string>
+</resources>
